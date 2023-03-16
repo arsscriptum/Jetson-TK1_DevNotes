@@ -7,6 +7,9 @@
 
 [This is the official Wiki for embedded Tegra & the Jetson TK1 board](https://elinux.org/Jetson_TK1)
 
+[Official Devlopment Forums](https://forums.developer.nvidia.com/)
+
+
 #### [How o access board](https://elinux.org/Jetson_TK1#Basic_setup_steps_to_access_the_board_and_access_internet)
 
 ## Using Jetson
@@ -88,3 +91,28 @@ A new example config file with USB 3.0 enabled:
 	FDT /boot/tegra124-jetson_tk1-pm375-000-c00-00.dtb
 	APPEND console=ttyS0,115200n8 console=tty1 no_console_suspend=1 lp0_vec=2064@0xf46ff000 video=tegrafb mem=1862M@2048M memtype=255 ddr_die=2048M@2048M section=256M pmuboard=0x0177:0x0000:0x02:0x43:0x00 vpr=151M@3945M tsec=32M@3913M otf_key=c75e5bb91eb3bd947560357b64422f85 usbcore.old_scheme_first=1 core_edp_mv=1150 core_edp_ma=4000 tegraid=40.1.1.0.0 debug_uartport=lsport,3 power_supply=Adapter audio_codec=rt5640 modem_id=0 android.kerneltype=normal fbcon=map:1 commchip_id=0 usb_port_owner_info=2 lane_owner_info=6 emc_max_dvfs=0 touch_id=0@0 tegra_fbmem=32899072@0xad012000 board_info=0x0177:0x0000:0x02:0x43:0x00 root=/dev/mmcblk0p1 rw rootwait tegraboot=sdmmc gpt
 ```
+
+
+## Remote Access
+
+https://elinux.org/Jetson/Remote_Access
+
+## Accessing the device from your PC
+
+First you should see if you can ping the device:
+```
+		ping tegra-ubuntu
+```
+Assuming this works, log into your device from your PC:
+```
+		ssh ubuntu@tegra-ubuntu
+```
+Or if you want to use graphical apps on the device display it on your PC using "X forwarding":
+```
+		ssh -X ubuntu@tegra-ubuntu nautilus
+```
+You should now have full remote access to the device. The only remaining feature to test is if the device has internet access. Note: By default the device won't have ICMP ping service enabled, so instead of using "ping www.google.com", you can test internet access by running this on the device:
+```
+		wget www.google.com
+```
+You can also get remote desktop access to your device such as by using a VNC or commercial SplashTop / TeamViewer solution, allowing you to run graphical apps easily without needing a HDMI monitor attached to your device. Beware though, that if you are trying to run graphical apps to their limits, some remote desktop solutions such as VNC are unlikely to give you the full performance or GPU acceleration.

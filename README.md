@@ -116,3 +116,6 @@ You should now have full remote access to the device. The only remaining feature
 		wget www.google.com
 ```
 You can also get remote desktop access to your device such as by using a VNC or commercial SplashTop / TeamViewer solution, allowing you to run graphical apps easily without needing a HDMI monitor attached to your device. Beware though, that if you are trying to run graphical apps to their limits, some remote desktop solutions such as VNC are unlikely to give you the full performance or GPU acceleration.
+
+
+## [Updating System](Updating.md)

@@ -119,3 +119,8 @@ You can also get remote desktop access to your device such as by using a VNC or 
 
 
 ## [Updating System](Updating.md)
+
+http://demotomohiro.github.io/hardware/jetson_tk1/setup/updating.html
+
+
+## [Install OS on SD card](http://demotomohiro.github.io/hardware/jetson_tk1/setup/sdcard.html)

@@ -2,6 +2,11 @@
 
 [Starting](http://demotomohiro.github.io/hardware/jetson_tk1/index.html#preparing)
 
+### External links
+
+- [Jetson TK1 information](http://elinux.org/Jetson_TK1) on the embedded Linux wiki
+- [Jetson TK1 developer forum](https://devtalk.nvidia.com/default/board/162/jetson-tk1/) hosted by NVIDIA
+
 
 ## Official Support Site 
 
@@ -10,19 +15,20 @@
 [Official Devlopment Forums](https://forums.developer.nvidia.com/)
 
 
-#### [How o access board](https://elinux.org/Jetson_TK1#Basic_setup_steps_to_access_the_board_and_access_internet)
-
 ## Using Jetson
 
-[Using Jetson TK1 like PC](http://demotomohiro.github.io/hardware/jetson_tk1/setup/pc.html)
+- [Using Jetson TK1 like PC](http://demotomohiro.github.io/hardware/jetson_tk1/setup/pc.html)
 
 or
 
-[Remote connection](http://demotomohiro.github.io/hardware/jetson_tk1/setup/remote.html) / [Remote connection without router](http://demotomohiro.github.io/hardware/jetson_tk1/setup/remote_wo_router.html)
+- [Remote connection](http://demotomohiro.github.io/hardware/jetson_tk1/setup/remote.html) / [Remote connection without router](http://demotomohiro.github.io/hardware/jetson_tk1/setup/remote_wo_router.html)
 
 or
 
-[Serial console](http://demotomohiro.github.io/hardware/jetson_tk1/setup/serial.html)
+- [Serial console](http://demotomohiro.github.io/hardware/jetson_tk1/setup/serial.html)
+
+
+[How to access board](https://elinux.org/Jetson_TK1#Basic_setup_steps_to_access_the_board_and_access_internet)
 
 
 ## Boot Jetson TK1 in recovery mode
@@ -124,3 +130,6 @@ http://demotomohiro.github.io/hardware/jetson_tk1/setup/updating.html
 
 
 ## [Install OS on SD card](http://demotomohiro.github.io/hardware/jetson_tk1/setup/sdcard.html)
+
+
+## Installing [Debian On NVIDIA Jetson-TK1](https://wiki.debian.org/InstallingDebianOn/NVIDIA/Jetson-TK1)
